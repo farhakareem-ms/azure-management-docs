@@ -35,13 +35,13 @@ To add an Azure Linux node pool into your existing cluster, use the `az aks node
 az aks nodepool add \
     --resource-group testAzureLinuxResourceGroup \
     --cluster-name testAzureLinuxCluster \
-    --name ALnodepool \
+    --name alnodepool \
     --node-count 3 \
     --os-sku AzureLinux
 ```
 
 > [!NOTE]
-> The name of a node pool must start with a lowercase letter and can only contain alphanumeric characters. For Linux node pools the length must be between one and 12 characters.
+> AKS node pool names must be all lowercase. The names must be 1-12 characters in length for Linux node pools and 1-6 characters for Windows node pools. A name must start with a letter, and the only allowed characters are letters and numbers.
 
 ## 2 - Check the node pool status
 
